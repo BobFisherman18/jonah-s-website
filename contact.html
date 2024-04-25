@@ -33,6 +33,49 @@
     </header>
     <section>
       <p>Feel free to contact me if you have any questions!</p>
+      <fieldset>
+        <legend>Personal Infomation</legend>
+        <label for="fname">First Name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          maxlength="50"
+          required
+        /><br />
+        <label for="lname">Last Name:</label><br />
+        <input type="text" name="lname" id="lname" maxlength="50" />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="99" />
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="123-456-7890"
+          maxlength="30"
+        />
+        <small>Format: 123-456-7890</small>
+      </fieldset>
+
+      <fieldset>
+        <legend>Questionnarie</legend>
+        <label for="hobby">What is your hobby?</label><br />
+        <input type="text" id="hobby" name="hobby" /><br /><br /><br />
+        <label for="message">Any Questions?</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="40"
+          rows="10"
+          style="resize: none"
+          maxlength="500"
+        ></textarea
+        ><br /><br />
+      </fieldset>
+      <br /><input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
     </section>
   </body>
 </html>
